@@ -1,0 +1,219 @@
+/* src/pages/About.css */
+
+/* Hero Section – Half Page Image */
+.about-hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=90') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.about-hero-title {
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: 200;
+  color: white;
+  letter-spacing: -1px;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Content Section – Gap + Scroll Animation */
+.about-content-section {
+  padding: 10rem 0 140px;
+  background: #ffffff;
+}
+
+.about-content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.about-text-wrapper {
+  text-align: center;
+}
+
+.about-main-text {
+  font-size: 1.28rem;
+  line-height: 1.289;
+  color: #1a1a1a;
+  margin-bottom: 48px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* This class makes it appear */
+.about-main-text.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-hero-title {
+    font-size: 5.5rem;
+  }
+  .about-content-container {
+    padding: 0 40px;
+  }
+  .about-main-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero-title {
+    font-size: 4rem;
+    letter-spacing: -2px;
+  }
+  .about-content-section {
+    padding: 120px 0 100px;
+  }
+  .about-content-container {
+    padding: 0 20px;
+  }
+  .about-main-text {
+    font-size: 1.45rem;
+    line-height: 1.9;
+  }
+}
+
+
+
+
+/* ==================== MISSION & VALUES – 100% SAME + SMOOTH ANIMATION ==================== */
+.mission-values-perfect {
+   padding: 10px 0 180px 0;
+  background: #ffffff;
+}
+
+.mission-values-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+/* Image – Small & Centered */
+.mission-image-box {
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mission-image-box.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.blue-bar-image {
+  width: 70px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 0 auto 32px;
+  border-radius: 3px;
+}
+
+.mission-img {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 16px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.12);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Flex Layout */
+.mission-values-flex {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+/* Each Card */
+.value-card {
+  flex: 1;
+  min-width: 320px;
+  max-width: 420px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.value-card:nth-child(2) { transition-delay: 0.2s; }
+.value-card:nth-child(3) { transition-delay: 0.4s; }
+
+.value-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.value-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 14px;
+}
+
+.blue-bar {
+  width: 50px;
+  height: 2px;
+  background: #3b82f6;
+  margin: 0 auto 18px;
+  border-radius: 3px;
+}
+
+.value-desc {
+  font-size: 1.13rem;
+  line-height: 1.9;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 868px) {
+  .mission-values-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  .mission-values-inner { padding: 0 20px; }
+  .mission-values-perfect { padding: 140px 0 100px; }
+  .value-title { font-size: 2.4rem; }
+}
+
+
+/* ONE UNIVERSAL SMOOTH ANIMATION – NO FLICKER */
+.scroll-trigger {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-trigger.triggered {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay for cards */
+.value-card:nth-child(1).triggered { transition-delay: 0.1s; }
+.value-card:nth-child(2).triggered { transition-delay: 0.3s; }
