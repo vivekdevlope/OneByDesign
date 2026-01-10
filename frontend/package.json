@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.2.9",
     "@tailwindcss/vite": "^4.1.17",
     "aos": "^2.3.4",
     "axios": "^1.13.2",
     "framer-motion": "^12.23.25",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.6",
     "yet-another-react-lightbox": "^3.26.0"
   },

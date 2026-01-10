@@ -1,12 +1,12 @@
 /* src/components/layout/Navbar.css */
 /* BASE (Mobile First) */
+
 .main-navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
-  padding: 20px 0;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   background: transparent;
   backdrop-filter: none !important;
@@ -41,10 +41,10 @@
 }
 
 .navbar-logo {
-  color: white;
-  font-size: 2rem;
-  font-weight: 100;
-  text-decoration: none;
+  /* color: white; */
+  /* font-size: 2rem; */
+  /* font-weight: 100; */
+  /* text-decoration: none; */
   letter-spacing: -1px;
   text-shadow: 0 4px 15px rgba(0,0,0,0.6);
   transition: all 0.4s ease;
@@ -61,7 +61,7 @@
   display: block;
   background: none;
   border: none;
-  color: white;
+  color: #a9bcd0;
   font-size: 2rem;
   cursor: pointer;
   padding: 10px;
@@ -82,7 +82,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 40px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -98,8 +98,8 @@
   pointer-events: all;
 }
 
-.nav-link {
-  color: white;
+.nav-link { 
+  color: #a9bcd0;
   text-decoration: none;
   font-size: 2.2rem;
   font-weight: 100;
@@ -107,7 +107,7 @@
   position: relative;
   padding: 8px 0;
   transition: all 0.4s ease;
-}
+  }
 
 .nav-link::after {
   content: '';
@@ -133,8 +133,8 @@
 .navbar-phone {
   background-color: rgba(0, 255, 255, 0);
   padding: 16px 32px;
-  border: 1px solid rgb(249, 249, 249);  
-  color: white;
+  border: 1px solid #a9bcd0;  
+  color: #a9bcd0;
   font-size: 1.8rem;
   font-weight: 200;
   letter-spacing: 1px;
@@ -211,7 +211,7 @@
 }
 
 /* Extra small phones */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .navbar-logo {
     font-size: 1.8rem;
   }
@@ -224,7 +224,7 @@
     font-size: 1.5rem;
     padding: 12px 24px;
   }
-}
+} */
 
 /* ==================== NAVBAR LOGO – PERFECT SIZE & PREMIUM LOOK ==================== */
 .navbar-logo {
@@ -265,7 +265,7 @@
 }
 
 /* RESPONSIVE — ALWAYS PERFECT */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .logo-image {
     height: 38px;
   }
@@ -283,14 +283,14 @@
   }
   .logo-text {
     display: none; /* Clean mobile look */
-  }
-}
+  /* } */
+/* }
 
 @media (max-width: 480px) {
   .logo-image {
     height: 32px;
   }
-}
+} */ */
 
 /* If logo is still too big — force max constraints */
 /* CONTROL LOGO SIZE — THIS IS THE KEY */
@@ -303,32 +303,32 @@
 }
 
 /* RESPONSIVE — ALWAYS PERFECT */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .logo-image {
     height: 14vw;         /* Slightly smaller on large tablets */
-  }
-}
+  /* } */
+/* }
 
 @media (max-width: 992px) {
   .logo-image {
     height: 12vw;         /* Balanced for medium screens */
-  }
+  /* }
 }
 
 @media (max-width: 768px) {
   .logo-image {
     height: 55px;         /* Still visible but not overwhelming on mobile */
-  }
+  /* }
   .logo-text {
     display: none; /* Clean mobile look */
-  }
+  /* }
 }
 
 @media (max-width: 480px) {
   .logo-image {
     height: 50px;         /* Minimum for small phones */
-  }
-}
+  /* }
+} */ */ */ */ */ */
 
 /* If logo is still too big/small — force max constraints */
 .logo-image {

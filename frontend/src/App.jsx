@@ -5,6 +5,10 @@ import Footer from './components/layouts/Footer';
 import Navbar from './components/layouts/Navbar';
 import AppRoutes from './routes/AppRoutes';
 
+import "@fontsource/roboto";        // Defaults to weight 400
+import "@fontsource/roboto/700.css"; // Bold
+import "./App.css"
+
 function App() {
   useEffect(() => {
     const handleScroll = () => {

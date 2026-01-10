@@ -9,6 +9,7 @@ import Projects from '../pages/Projects';
 import ProjectDetail from '../pages/ProjectDetail';
 import Contact from '../pages/Contact';
 import AdminLogin from '../pages/AdminLogin';
+import Blog from "../pages/Blog";
 import AdminDashboard from '../pages/AdminDashboard';
 
 const AppRoutes = () => {
@@ -87,6 +88,21 @@ const AppRoutes = () => {
             </motion.div>
           } 
         />
+        {/* {blog} */}
+        <Route 
+          path="/Blog" 
+          element={
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <Blog/>
+            </motion.div>
+          } 
+        />
+
 
          <Route 
           path="/contact" 

@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { IoIosArrowForward } from "react-icons/io";
 
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -123,7 +124,7 @@ useEffect(() => {
   return (
     <>
       {/* HERO */}
-   <div className="hero-container">
+   <div className="hero-container w-full">
   <div className="hero-slider">
     {images.map((img, i) => (
       <div
@@ -140,12 +141,21 @@ useEffect(() => {
   <div className="overlay"></div>
 
   {/* PERFECT CENTERED CONTENT */}
-  <div className="hero-content">
-    <div className="hero-content-inner">
-      <h1>Design</h1>
-      <p>Luxury Living | Commercial Workspaces | Curated Furniture and Styling</p>
+  <div className='w-full relative top-[50%] '>
+  <div className="hero-content1 sm:left-[14%] left-7 top-20">
+    <div className="text-[6vw] sm:text-5xl ">
+      <h1>Luxury Living | Commercial <br/> Workspaces | Curated <br/> Furniture and Styling</h1>
       {/* <button className="enquire-btn">Enquire Now</button> */}
     </div>
+  </div> 
+  <button className=' absolute font-[#a9bcd0] flex items-center z-2 rounded-sm sm:top-75 top-50 sm:left-[14%] left-7'>
+  <div data-aos="fade-up" data-aos-delay="600">
+        <Link to="/contact" className="about-cinematic-btn">
+          Enquire Now
+          <span className="btn-arrow">→</span>
+        </Link>
+      </div>
+  </button>
   </div>
 </div>
 
@@ -178,7 +188,7 @@ useEffect(() => {
               </div>
               <div className="service-text">
                 <h3>Interiors</h3>
-                <p>Shaping spaced through "Timeless Designs". A professional Design Studio providing solutions in the field of High end workspaces, hospitality and Luxury Living.</p>
+                <p className=''>Shaping spaced through "Timeless Designs". A professional Design Studio providing solutions in the field of High end workspaces, hospitality and Luxury Living.</p>
               </div>
             </div>
 

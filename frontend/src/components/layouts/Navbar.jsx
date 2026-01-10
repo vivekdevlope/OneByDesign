@@ -22,31 +22,34 @@ const Navbar = () => {
       <div className="navbar-container">
         
 {/* FINAL PERFECT LOGO */}
-<Link to="/" className="navbar-logo">
-  <img 
+<Link to="/" className=" w-[40%] p-2 ">
+  <img
     src={logo} 
     alt="OneByDesign" 
-    className="logo-image"
+    className="sm:h-[30%] sm:w-[30%]"
   />
 </Link>
 
 
 
         {/* Desktop Menu */}
+        <div className='w-[60%]'>
         <div className={`navbar-menu ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <Link to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
           <Link to="/about" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
           <Link to="/projects" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
+          <Link to="/Blog" onClick={() => setIsMobileMenuOpen(false)} className='nav-link' >Blog</Link>
           <Link to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
           
-          <a href="tel:+919811428296" className="nav-link phone-link">
-            <span className="navbar-phone">+91 9818826296</span>
+          <a href="tel:+919811428296" className="">
+            <span className="navbar-phone rounded-md">+91 9818826296</span>
           </a>
 
           {/* Optional CTA Button */}
           {/* <Link to="/contact" className="enquire-btn" onClick={() => setIsMobileMenuOpen(false)}>
             Enquire Now
           </Link> */}
+        </div>
         </div>
 
         {/* Mobile Menu Toggle */}
