@@ -1,7 +1,7 @@
 // src/components/layout/Footer.jsx
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import logo from "../../assets/logo/Logo2.png"
+import logo from '../../assets/logo/logo2.png';
 const Footer = () => {
   return (
     <footer className="pro-footer">
