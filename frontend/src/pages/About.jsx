@@ -51,7 +51,7 @@ const About = () => {
   return (
     <>
       {/* ==================== HERO IMAGE SECTION WITH "ABOUT US" ==================== */}
-      <section className="about-hero">
+      <section className="about-hero h-screen">
         <div className="about-hero-image">
           <div className="about-hero-overlay"></div>
           <h1 className="about-hero-title">About Us</h1>

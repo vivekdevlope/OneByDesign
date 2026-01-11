@@ -151,26 +151,26 @@ const Projects = () => {
               <div className="slide-overlay"></div>
 
               {/* Content */}
-              <div className="slide-content">
+              <div className="slide-content left-[15%] ">
                 <p className="project-location">{project.location}</p>
                 <h1 className="project-title">{project.title}</h1>
                 <div className="title-line"></div>
-                <p className="project-category">{project.category}</p>
+                <p className="project-category"  >{project.category}</p>
               </div>
             </div>
           ))}
 
           {/* Navigation Arrows */}
-          <button className="nav-arrow left-arrow" onClick={prevSlide}>
+          {/* <button className="nav-arrow left-arrow" onClick={prevSlide}>
             ←
           </button>
           <button className="nav-arrow right-arrow" onClick={nextSlide}>
             →
-          </button>
+          </button> */}
 
           {/* Progress Bar */}
                 {/* PROGRESS BAR – ACTIVE = 50px + FILLING, OTHERS = 10px + EMPTY */}
-          <div className="progress-bar-container">
+          {/* <div className="progress-bar-container">
             {projects.map((_, index) => (
               <div
                 key={index}
@@ -180,7 +180,7 @@ const Projects = () => {
                 <div className="progress-fill" />
               </div>
             ))}
-          </div>
+          </div> */}
 
 
         </div>
@@ -191,7 +191,7 @@ const Projects = () => {
     <section className="selected-works-section">
         <div className="works-container">
           <div className="section-heading scroll-trigger">
-            <h2 className="works-title">Great Works</h2>
+            <h2 className="works-title">Design Dossier</h2>
             <p className="works-subtitle">Curated projects that define our signature aesthetic</p>
           </div>
 
@@ -273,7 +273,7 @@ const Projects = () => {
 
           {/* Title */}
           <div className="portfolio-header">
-            <h2 className="portfolio-title">Portfolio</h2>
+            <h2 className="portfolio-title">Portfoilo of Projects</h2>
             <p className="portfolio-subtitle">
               Curated collection of timeless residential masterpieces
             </p>
@@ -297,7 +297,7 @@ const Projects = () => {
       </div>
 
       <div className="card-content">
-        <h3 className="card-title">{project.title}</h3>
+        <h3 className="card-title text-2xl sm:text-4xl">{project.title}</h3>
         <p className="card-location">{project.location}</p>
         <span className="card-category">{project.category}</span>
         <div className="card-arrow">View Project</div>

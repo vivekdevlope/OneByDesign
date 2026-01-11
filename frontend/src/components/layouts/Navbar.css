@@ -96,13 +96,14 @@
   visibility: visible;
   transform: translateY(0);
   pointer-events: all;
+  /* font-weight:900; */
 }
 
 .nav-link { 
   color: #a9bcd0;
   text-decoration: none;
   font-size: 2.2rem;
-  font-weight: 100;
+  font-weight:100;
   letter-spacing: -1px;
   position: relative;
   padding: 8px 0;
@@ -195,7 +196,7 @@
 
   .nav-link {
     font-size: 1.01rem;
-    font-weight: 100;
+    font-weight: 600;
     letter-spacing: 0.9px;
   }
 

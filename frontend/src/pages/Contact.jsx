@@ -17,7 +17,8 @@ const [formData, setFormData] = useState({ name: '', email: '', message: '' });
       await axios.post('http://localhost:5000/api/contact/submit', formData);
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
-    } catch (err) {
+    // eslint-disable-next-line no-unused-vars
+    } catch (error) {
       setStatus('error');
     }
   };
@@ -95,21 +96,21 @@ useEffect(() => {
 
       <div className="info-details">
         <div className="info-block scroll-animate" data-animation="fade-up" data-delay="400">
-          <p className="block-label">Email</p>
+          <p className="block-label">Email:</p>
           <a href="mailto:studio@1bydesign.in" className="block-value">
             studio@1bydesign.in
           </a>
         </div>
 
         <div className="info-block scroll-animate" data-animation="fade-up" data-delay="600">
-          <p className="block-label">Phone</p>
+          <p className="block-label">Phone:</p>
           <a href="tel:+919818826296" className="block-value">
             +91 9818826296
           </a>
         </div>
 
         <div className="info-block scroll-animate" data-animation="fade-up" data-delay="800">
-          <p className="block-label">Studio</p>
+          <p className="block-label">Studio:</p>
           <p className="block-value address">
             1108, Basement<br />
             Sector 35, Gurgaon<br />
@@ -125,21 +126,21 @@ useEffect(() => {
       <div className="form-row">
         <div className="input-wrapper">
           <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-          <label>Name</label>
+          <label>Name :</label>
         </div>
       </div>
 
       <div className="form-row">
         <div className="input-wrapper">
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-          <label>Email</label>
+          <label>Email :</label>
         </div>
       </div>
 
       <div className="form-row">
         <div className="input-wrapper">
           <textarea name="message" rows="6" value={formData.message} onChange={handleChange} required></textarea>
-          <label>Your Message</label>
+          <label>Your Message :</label>
         </div>
       </div>
 
@@ -252,16 +253,16 @@ useEffect(() => {
       {/* Next sections will come below this */}
 
             {/* ==================== SECTION 4 – FINAL CLOSING & FOOTER ==================== */}
-      <section className="closing-section">
-        <div className="closing-container">
+      <section className="closing-section ">
+        <div className="closing-container ">
 
           {/* Closing Statement */}
-          <div className="closing-content">
-            <h2 className="closing-main-title">
+          <div className="closing-content ">
+            <h2 className="closing-main-title sm:text-8xl text-6xl">
               Begin Your<br />
               Extraordinary Story
             </h2>
-            <p className="closing-subtitle">
+            <p className="closing-subtitle text-2xl">
               We don’t follow trends.<br /> We set them.
               Let’s create something <br />that will be admired for generations.
             </p>

@@ -24,10 +24,10 @@
 }
 
 .footer-nav-link {
-  color: #ffffff;
+  color: #a9bcd0;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -59,15 +59,15 @@
 .footer-logo-text {
   font-size: 2.6rem;
   font-weight: 100;
-  color: white;
+  color: #a9bcd0;
   letter-spacing: -1px;
   margin-bottom: 4px;
 }
 
 .footer-est {
   font-size: 0.95rem;
-  font-weight: 100;
-  color: #fffcfc;
+  font-weight: 500;
+  color: #a9bcd0;
   letter-spacing: 1px;
 }
 
@@ -75,8 +75,8 @@
 .footer-copyright {
   justify-self: end;
   font-size: 0.75rem;
-  font-weight: 100;
-  color: #ffffff;
+  font-weight: 600;
+  color: #a9bcd0;
 }
 
 /* Responsive */

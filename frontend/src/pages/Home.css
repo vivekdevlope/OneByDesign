@@ -312,10 +312,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
+  background:#a9bcd0;
   border: none;
   font-size: 2.8rem;
-  color: #666;
+  color: #a9bcd0;
   cursor: pointer;
   z-index: 20;
   width: 50px;
@@ -330,8 +330,8 @@
 }
 
 .nav-arrow:hover {
-  color: #000;
-  background: white;
+  color: #a9bcd0;
+  background: #a9bcd0;
   transform: translateY(-50%) scale(1.15);
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
@@ -361,28 +361,9 @@
   .review-quote {
     font-size: 1.3rem;
   }
-
-  .nav-arrow {
-    font-size: 3.5rem;
-    width: 70px;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.95);
-  }
-
-  .left-arrow {
-    left: 20px;
-  }
-
-  .right-arrow {
-    right: 20px;
-  }
 }
 
 /* Large screens – even better spacing */
-@media (min-width: 1200px) {
-  .left-arrow  { left: -20px; }
-  .right-arrow { right: -20px; }
-}
 
 /* ==================== ABOUT US ==================== */
 .about-us-final {
@@ -535,68 +516,52 @@
 }
 
 /* Subtle moving background accent */
-.about-bg-accent {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at 30% 70%, rgba(100, 100, 255, 0.08) 0%, transparent 50%);
-  pointer-events: none;
-  animation: float 20s infinite linear;
-}
-
 @keyframes float {
   0% { transform: translate(0, 0) rotate(0deg); }
   100% { transform: translate(100px, -100px) rotate(10deg); }
 }
 
-.about-cinematic-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
-  position: relative;
-  z-index: 2;
-}
+
 
 .about-estimate {
   font-size: 1.1rem;
   font-weight: 100;
-  color: #888;
+  color: #a9bcd0;
   letter-spacing: 6px;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   opacity: 0.9;
 }
 
 .about-cinematic-title {
-  font-size: clamp(4.5rem, 7vw, 8.5rem);
+  /* font-size: clamp(4.5rem, 7vw, 8.5rem); */
   font-weight: 100;
   line-height: 0.84;
   letter-spacing: -0.06em;
-  margin: 0 0 48px 0;
-  background: linear-gradient(120deg, #ffffff 0%, #aaaaaa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin:30px 0;
+  /* background: linear-gradient(120deg, #ffffff 0%, #aaaaaa 100%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
 }
 
 .highlight-gradient {
-  background: linear-gradient(120deg, #a8e6cf 0%, #d0f0c0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color:#a9bcd0;
   font-style: italic;
 }
 
 .about-cinematic-text {
   max-width: 900px;
   margin: 0 auto 80px;
-  font-size: clamp(1.4rem, 1vw, 1.8rem);
-  line-height: 1;
-  color: #e0e0e0;
+  /* font-size: clamp(1.4rem, 1vw, 1.8rem); */
+  letter-spacing:3px;
+  line-height: 1.3;
+  color: #a9bcd0;
 }
 
 .text-bold {
   font-weight: 100;
-  color: white;
+  color: #a9bcd0;
   margin-top: 40px;
   font-size: 1.6rem;
 }

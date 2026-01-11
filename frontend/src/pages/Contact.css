@@ -4,7 +4,7 @@
   min-height: 900px;
   max-height: 1080px;
   background: #1d1d1d;
-  color: white;
+  color: #a9bcd0;
   position: relative;
   display: flex;
   align-items: center;
@@ -37,10 +37,10 @@
   line-height: 0.92;
   letter-spacing: -6px;
  margin: 0 0 2.5rem 0;
-  background: linear-gradient(120deg, #fff 0%, #e0e0e0 100%);
+  /* background: linear-gradient(120deg, #fff 0%, #e0e0e0 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -48,7 +48,7 @@
 .contact-main-subtitle {
   font-size: 1.8rem;
   line-height: 1.8;
-  color: #e0e0e0;
+  color: #a9bcd0;
   max-width: 700px;
   margin: 0 auto;
   font-weight: 400;
@@ -157,7 +157,7 @@
   font-size: 5.2rem;
   font-weight: 100;
   color: #0a0a0a;
-  letter-spacing: -8px;
+  letter-spacing: -6px;
   line-height: 1;
   margin: 0 0 40px 0;
 }
@@ -239,7 +239,7 @@
   border-bottom: 1px solid #e2e8f0;
   background: transparent;
   outline: none;
-  color: #ffffff;
+  color: #a9bcd0;
   transition: border-color 0.5s;
 }
 
@@ -253,7 +253,7 @@
   left: 0;
   top: 20px;
   font-size: 1.7rem;
-  color: #ffffff;
+  color: #a9bcd0;
   pointer-events: none;
   transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -264,14 +264,14 @@
 .input-wrapper textarea:not(:placeholder-shown) + label {
   top: -10px;
   font-size: 1rem;
-  color: #ffffff;
+  color: #a9bcd0;
   font-weight: 400;
 }
 
 .form-submit {
   align-self: flex-start;
   background: #000000b8;
-  color: rgb(255, 255, 255);
+  color: #a9bcd0;
   border: none;
   padding: 20px 64px;
   font-size: 1.1rem;
@@ -284,7 +284,7 @@
 .form-submit:hover {
   background: #040404;
   transform: translateY(-6px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+  box-shadow: 0 30px 60px #a9bcd0;
 }
 
 /* Mobile */
@@ -526,8 +526,8 @@
 }
 
 .schedule-btn {
-  background: #000;
-  color: white;
+  background: #1a1a1a;
+  color: #a9bcd0;
   border: none;
   padding: 18px 56px;
   font-size: 1.1rem;
@@ -540,7 +540,7 @@
 .schedule-btn:hover {
   background: #1a1a1a;
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 40px #a9bcd0;
 }
 
 /* Mobile */
@@ -563,39 +563,39 @@
 
 /* ==================== SECTION 4 – FINAL CLOSING & FOOTER ==================== */
 .closing-section {
-  padding: 240px 0 120px;
+  padding: 175px 0 100px;
   background: #000;
-  color: white;
+  color: #a9bcd0;
   position: relative;
 }
 
 .closing-container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 100px;
+  /* padding: 0 100px; */
 }
 
 .closing-content {
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .closing-main-title {
-  font-size: 7.5rem;
+  /* font-size: 7.5rem; */
   font-weight: 100;
-  letter-spacing: -6px;
+  letter-spacing: -5px;
   line-height: 0.92;
   margin: 0 0 40px 0;
-  background: linear-gradient(120deg, #fff 0%, #e0e0e0 100%);
+  /* background: linear-gradient(120deg, #fff 0%, #e0e0e0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text; */
 }
 
 .closing-subtitle {
-  font-size: 1.8rem;
-  line-height: 1.9;
-  color: #cccccc;
+  /* font-size: 1.8rem; */
+  /* line-height: 1.9; */
+  color: #a9bcd0;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -657,12 +657,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
-  .closing-main-title { font-size: 5.5rem; }
+  /* .closing-main-title { font-size: 5.5rem; } */
 }
 
 @media (max-width: 768px) {
   .closing-container { padding: 0 40px; }
-  .closing-main-title { font-size: 4.5rem; letter-spacing: -4px; }
+  /* .closing-main-title { font-size: 4.5rem; letter-spacing: -4px; } */
   .footer-grid { grid-template-columns: 1fr; gap: 80px; text-align: center; }
 }
 
@@ -759,7 +759,7 @@
   align-items: center;
   gap: 20px;
   background: #000000;
-  color: white;
+  color: #a9bcd0;
   padding: 24px 66px;
   font-size: 1.1rem;
   font-weight: 100;
@@ -773,7 +773,7 @@
 .consultation-luxury-btn:hover {
   background: #1a1a1a;
   transform: translateY(-8px);
-  box-shadow: 0 50px 100px rgba(0,0,0,0.25);
+  box-shadow: 0 50px 100px #a9bcd0;
 }
 
 .btn-arrow {

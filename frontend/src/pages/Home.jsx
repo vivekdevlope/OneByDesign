@@ -209,13 +209,55 @@ useEffect(() => {
 
 
 
-            {/* ==================== CLIENT REVIEWS - EXACTLY LIKE YOUR IMAGE ==================== */}
-      <section className="client-reviews-clean">
+
+
+
+
+            {/* ==================== FINAL ABOUT US – 100% SAME AS YOUR IMAGE ==================== */}
+     {/* ==================== ULTRA PREMIUM ABOUT US – CINEMATIC & ANIMATED ==================== */}
+<section className="about-home-cinematic">
+  <div className="about-cinematic-container">
+
+    {/* Background Decorative Element */}
+    <div className="about-bg-accent"></div>
+
+    {/* Main Content */}
+    <div className="about-cinematic-content">
+      <p className="about-estimate" data-aos="fade-up">Est. 2023</p>
+
+      <h2 className="about-cinematic-title" data-aos="fade-up" data-aos-delay="200"> 
+              <span className="highlight-gradient text-4xl sm:text-8xl mb-5">We Craft Legacies</span>
+      </h2>
+
+      <div className="about-cinematic-text sm:text-[2.5vh] text-sm" data-aos="fade-up" data-aos-delay="400">
+        <p>
+          1 by Design is where vision meets flawless execution. We create timeless interiors 
+          and architectural masterpieces — from private residences to boutique hotels and 
+          iconic workspaces — all delivered turnkey with uncompromising quality.
+        </p>
+        <p className="text-bold">
+          Less trends. More forever.
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="600">
+        <Link to="/about" className="about-cinematic-btn">
+          Explore Our Journey
+          <span className="btn-arrow">→</span>
+        </Link>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* ==================== CLIENT REVIEWS - EXACTLY LIKE YOUR IMAGE ==================== */}
+<section className="client-reviews-clean">
         <div className="reviews-wrapper">
 
           {/* Left Arrow */}
         <button className="nav-arrow left-arrow">‹</button>
-<button className="nav-arrow right-arrow">›</button>
+        <button className="nav-arrow right-arrow">›</button>
 
           {/* Sliding Reviews */}
           <div className="reviews-slider">
@@ -265,49 +307,6 @@ useEffect(() => {
           </div>
         </div>
       </section>
-
-
-
-
-            {/* ==================== FINAL ABOUT US – 100% SAME AS YOUR IMAGE ==================== */}
-     {/* ==================== ULTRA PREMIUM ABOUT US – CINEMATIC & ANIMATED ==================== */}
-<section className="about-home-cinematic">
-  <div className="about-cinematic-container">
-
-    {/* Background Decorative Element */}
-    <div className="about-bg-accent"></div>
-
-    {/* Main Content */}
-    <div className="about-cinematic-content">
-      <p className="about-estimate" data-aos="fade-up">Est. 2023</p>
-
-      <h2 className="about-cinematic-title" data-aos="fade-up" data-aos-delay="200">
-        We Don’t Design Spaces<br />
-        <span className="highlight-gradient">We Craft Legacies</span>
-      </h2>
-
-      <div className="about-cinematic-text" data-aos="fade-up" data-aos-delay="400">
-        <p>
-          1 by Design is where vision meets flawless execution. We create timeless interiors 
-          and architectural masterpieces — from private residences to boutique hotels and 
-          iconic workspaces — all delivered turnkey with uncompromising quality.
-        </p>
-        <p className="text-bold">
-          Less trends. More forever.
-        </p>
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="600">
-        <Link to="/about" className="about-cinematic-btn">
-          Explore Our Journey
-          <span className="btn-arrow">→</span>
-        </Link>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 
 
 

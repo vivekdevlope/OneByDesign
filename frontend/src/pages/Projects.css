@@ -51,7 +51,7 @@
 .slide-content {
   position: absolute;
   bottom: 120px;
-  left: 80px;
+  top:50%;
   color: white;
   z-index: 10;
   max-width: 800px;
@@ -60,7 +60,7 @@
 .project-location {
   font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0px;
   margin-bottom: 16px;
   opacity: 0.9;
 }
@@ -302,9 +302,10 @@
 .works-subtitle {
   font-size: 1.4rem;
   color: #525252;
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.2;
+  letter-spacing: -1px;
 }
 /* ==================== PROJECT PAGE – CATEGORY FILTERS (FULLY RESPONSIVE) ==================== */
 .filters-wrapper {
@@ -933,9 +934,9 @@
 
 .load-more-btn:hover {
   background: #000;
-  color: white;
+  color: #a9bcd0;
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px #a9bcd0;
 }
 
 
@@ -962,7 +963,7 @@
   font-size: 6rem;
   font-weight: 100;
   color: #080808;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   margin: 0 0 20px 0;
 }
 
@@ -1030,6 +1031,7 @@
   background: linear-gradient(transparent 60%, rgba(0,0,0,0.7));
   opacity: 0;
   transition: opacity 0.6s ease;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .portfolio-card:hover .image-overlay {
@@ -1043,8 +1045,8 @@
 }
 
 .card-title {
-  font-size: 2rem;
-  font-weight: 800;
+  /* font-size: 2rem; */
+  font-weight: 600;
   color: #181818;
   margin: 0 0 12px 0;
   line-height: 1.2;
