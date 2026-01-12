@@ -173,7 +173,7 @@ useEffect(() => {
             {/* Architecture - Image → Text */}
             <div className="service-item" data-animate>
               <div className="service-img">
-                <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=900&q=80" alt="Architecture" />
+                <img src="https://res.cloudinary.com/dwhpmxsyf/image/upload/q_auto,f_auto/v1768210056/architecture_f6wiqh.jpg" alt="Architecture" />
               </div>
               <div className="service-text">
                 <h3>Architecture</h3>
@@ -184,7 +184,7 @@ useEffect(() => {
             {/* Interiors - Text → Image */}
             <div className="service-item reverse" data-animate>
               <div className="service-img">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Interiors" />
+                <img src="https://res.cloudinary.com/dwhpmxsyf/image/upload/v1768210318/Interiors_sovjkf.jpg" alt="Interiors" />
               </div>
               <div className="service-text">
                 <h3>Interiors</h3>
@@ -195,7 +195,7 @@ useEffect(() => {
             {/* Bespoke Furniture - Image → Text */}
             <div className="service-item" data-animate>
               <div className="service-img">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80" alt="Furniture" />
+                <img src="https://res.cloudinary.com/dwhpmxsyf/image/upload/q_auto,f_auto/v1768210216/furniture_u5iotq.jpg" alt="Furniture" />
               </div>
               <div className="service-text">
                 <h3>Bespoke Furniture</h3>
